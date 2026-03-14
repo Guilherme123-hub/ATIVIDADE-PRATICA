@@ -1,48 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Contato - Guilherme Martins Marques</title>
+    <title>Fale Comigo - Guilherme Martins</title>
 </head>
-<body>
+<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6;">
 
-    <h2>Fale Comigo</h2>
+    <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Fale Comigo</h2>
+    <p>Preencha os dados abaixo para entrar em contato.</p>
 
-    <form action="sucesso.html">
+    <form action="sucesso.html" style="background: #f9f9f9; padding: 20px; border-radius: 8px;">
         
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required> [cite: 16]<br><br>
+        <label for="nome"><strong>Nome:</strong></label><br>
+        <input type="text" id="nome" name="nome" required style="width: 100%;"><br><br>
 
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required> [cite: 18]<br><br>
+        <label for="email"><strong>E-mail:</strong></label><br>
+        <input type="email" id="email" name="email" required style="width: 100%;"><br><br>
 
-        <label for="assunto">Assunto:</label><br>
-        <input type="text" id="assunto" name="assunto" required> [cite: 19]<br><br>
+        <label for="assunto"><strong>Assunto:</strong></label><br>
+        <input type="text" id="assunto" name="assunto" required style="width: 100%;"><br><br>
 
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" required></textarea> [cite: 20]<br><br>
+        <label for="mensagem"><strong>Mensagem:</strong></label><br>
+        <textarea id="mensagem" name="mensagem" required style="width: 100%; height: 100px;"></textarea><br><br>
 
         <hr>
+        <p><em>Informações adicionais:</em></p>
+
         <label for="tel">Telefone:</label><br>
-        <input type="tel" id="tel" name="tel"> [cite: 23]<br><br>
+        <input type="tel" id="tel" name="tel"><br><br>
 
-        <label for="data">Data de preferência para contato:</label><br>
-        <input type="date" id="data" name="data"> [cite: 24]<br><br>
+        <label for="data">Data de preferência:</label><br>
+        <input type="date" id="data" name="data"><br><br>
 
-        <label for="origem">Como me encontrou?</label><br>
-        <select id="origem" name="origem"> [cite: 25]
+        <label for="origem">Como me conheceu?</label><br>
+        <select id="origem" name="origem">
             <option value="linkedin">LinkedIn</option>
-            <option value="indicacao">Indicação</option>
+            <option value="faculdade">Faculdade</option>
             <option value="outros">Outros</option>
         </select><br><br>
 
-        <button type="reset">Limpar formulário</button> 
-        <button type="submit">Enviar</button> [cite: 46]
-
+        <button type="reset" style="padding: 10px 20px; cursor: pointer;">Limpar</button>
+        <button type="submit" style="padding: 10px 20px; cursor: pointer; background-color: #2c3e50; color: white; border: none; border-radius: 4px;">Enviar Mensagem</button>
     </form>
 
     <br>
-    <a href="index.html">Voltar para a página inicial</a> [cite: 41]
+    <a href="index.html" style="text-decoration: none; color: #3498db;">← Voltar para a página inicial</a>
 
 </body>
 </html>
