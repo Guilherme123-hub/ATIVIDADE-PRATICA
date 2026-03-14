@@ -2,70 +2,117 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Avaliação Diagnóstica</title>
+    <title>Currículo - Guilherme Martins</title>
 </head>
-<body id="topo">
+<body id="topo" style="font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333;">
 
-    <header>
-        <h1>Guilherme Martins</h1>
-        <p><em>Estudante do primeiro período</em></p>
-        <nav>
-            <a href="#sobre">Sobre</a> |
-            <a href="#contato">Contato</a> |
-            <a href="#hobbies">Hobbies</a> |
-            <a href="#rotina">Rotina</a> |
-            <a href="#midia">Mídia</a> |
-            <a href="#rodape">Rodapé</a> |
-            <a href="contato.html">Fale Comigo</a>
+    <header style="background-color: #2c3e50; color: white; padding: 20px; border-radius: 8px; text-align: center;">
+        <h1 style="margin: 0;">Guilherme Martins</h1>
+        <p style="margin: 5px 0;"><em>Estudante do primeiro período</em></p>
+        <nav style="margin-top: 15px;">
+            <a href="#sobre" style="color: white; text-decoration: none;">Sobre</a> |
+            <a href="#contato" style="color: white; text-decoration: none;">Contato</a> |
+            <a href="#hobbies" style="color: white; text-decoration: none;">Hobbies</a> |
+            <a href="#rotina" style="color: white; text-decoration: none;">Rotina</a> |
+            <a href="#midia" style="color: white; text-decoration: none;">Mídia</a> |
+            <a href="#rodape" style="color: white; text-decoration: none;">Rodapé</a> |
+            <a href="contato.html" style="color: #f1c40f; text-decoration: none; font-weight: bold;">Fale Comigo</a>
         </nav>
     </header>
 
-    ```
+    <section id="sobre" style="margin-top: 30px;">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Sobre mim</h2>
+        <p>Tenho 18 anos, moro em Itambacuri - MG e estou começando a faculdade.</p>
+        <p>Meu interesse principal é <strong>programação</strong>.</p>
+    </section>
 
-### 2. Novo Arquivo: `contato.html`
-Este arquivo contém o formulário com os campos obrigatórios e os 3 extras (telefone, data e lista suspensa)[cite: 15, 21].
+    <section id="contato">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Dados de contato</h2>
+        <ul>
+            <li>Email: guilhermecimples09@email.com</li>
+            <li>Telefone: (+55)33 998695890</li>
+            <li><a href="https://www.netflix.com" target="_blank" rel="noopener">Netflix</a></li>
+        </ul>
+    </section>
 
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Fale Comigo - Guilherme Martins</title>
-</head>
-<body>
-    <h2>Entre em Contato</h2>
+    <section id="hobbies">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Hobbies</h2>
+        <ul>
+            <li>Jogar Volei</li>
+            <li>Ouvir música</li>
+            <li>Jogar Video-Games</li>
+        </ul>
+        <h3>Top 3 Séries</h3>
+        <ol>
+            <li>The Rookie</li>
+            <li>The Walking Dead</li>
+            <li>Reacher</li>
+        </ol>
+    </section>
+
+    <section id="rotina">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Rotina semanal</h2>
+        <table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <caption style="padding: 10px;"><strong>Agenda</strong></caption>
+            <thead style="background-color: #f2f2f2;">
+                <tr>
+                    <th>Dia</th>
+                    <th>Manhã</th>
+                    <th>Tarde</th>
+                    <th>Noite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>programar Servidor</td>
+                    <td>Estudo</td>
+                    <td>Faculdade</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Descanso</td>
+                    <td>Estudo</td>
+                    <td>Faculdade</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Verificar o servidor</td>
+                    <td>Estudo</td>
+                    <td>Faculdade</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Descanso</td>
+                    <td>Estudo</td>
+                    <td>Faculdade</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Jogar</td>
+                    <td>Estudo</td>
+                    <td>Faculdade</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="midia" style="margin-top: 30px;">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #2c3e50;">Mídia</h2>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <figure>
+                <img src="img/hamster.jpg" alt="Minha foto" width="200" style="border-radius: 8px;">
+                <figcaption>Imagem genérica</figcaption>
+            </figure>
+            <video src="media/hamster.mp4" controls width="250" style="border-radius: 8px;"></video>
+        </div>
+    </section>
     
-    <form action="sucesso.html">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+    <footer id="rodape" style="margin-top: 50px; padding: 20px; background-color: #f2f2f2; text-align: center; border-radius: 8px;">
+        <p>Fim do currículo</p>
+        <p><a href="#topo" style="text-decoration: none; color: #2c3e50;">↑ Voltar ao topo</a></p>
+        <p><time datetime="2026">2026</time></p>
+    </footer>
 
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="assunto">Assunto:</label><br>
-        <input type="text" id="assunto" name="assunto" required><br><br>
-
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" required></textarea><br><br>
-
-        <label for="tel">Telefone:</label><br>
-        <input type="tel" id="tel" name="tel"><br><br>
-
-        <label for="data">Data para contato:</label><br>
-        <input type="date" id="data" name="data"><br><br>
-
-        <label for="origem">Como me conheceu?</label><br>
-        <select id="origem" name="origem">
-            <option value="linkedin">LinkedIn</option>
-            <option value="faculdade">Faculdade</option>
-            <option value="outros">Outros</option>
-        </select><br><br>
-
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
-    </form>
-
-    <br>
-    <a href="index.html">Voltar para a página inicial</a>
 </body>
 </html>
